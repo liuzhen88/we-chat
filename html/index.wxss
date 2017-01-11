@@ -1,0 +1,60 @@
+page{
+	background:#f6f3f3;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+.nav-bar{
+	width:100%;
+	height:160px;
+	background:#fff;
+}
+.nav-bar-list{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:25%;
+	height:80px;
+	float:left;
+	text-align:center;
+}
+.nav-bar-list-image{
+	margin:0 auto;
+	margin-top:10px;
+}
+.nav-bar-list-p{
+	width:100%;
+	text-align:center;
+}
+.recommand{
+	width:100%;
+	height:40px;
+	background:#fff;
+	margin-top:10px;
+}
+.recommand-title{
+	float:left;
+	height:40px;
+	line-height:40px;
+	margin-left:10px;
+}
+.recommand-action{
+	float:right;
+	height:40px;
+	line-height:40px;
+	margin-right:10px;
+}
+.recommand-list-container{
+	padding:10px;
+	background:#fff;
+}
+.recommand-list{
+	float:left;
+	width:50%;
+	margin-bottom:10px;
+}
+.clear{
+	clear:both;
+}
+.price{
+	color:red
+}

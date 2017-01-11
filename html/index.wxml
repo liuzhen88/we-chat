@@ -1,0 +1,40 @@
+<swiper
+	indicator-dots="{{indicatorDots}}"
+	autoplay="{{autoplay}}"
+	style="height:{{imageHeight}}px"
+>
+	<block wx:for="{{imgUrls}}" wx:key='{{imgUrls}}'>
+		<swiper-item>
+			<image 
+				src="{{item}}" 
+				class='image-item' 
+				bindload="countImage"
+				style="width:{{imageWidth}}px;height:{{imageHeight}}px"
+			/>
+		</swiper-item>
+	</block>
+</swiper>
+<view class='nav-bar'>
+	<view class='nav-bar-list' wx:for="{{list}}" wx:key="{{list}}">
+		<image src='{{item.url}}' style='width:40px;height:40px' class='nav-bar-list-image'/>
+		<p class='nav-bar-list-p'>{{item.text}}</p>
+	</view>
+	
+</view>
+<view class='recommand'>
+	<view class='recommand-title'>今日推荐</view>
+	<view class='recommand-action'>换一批</view>
+</view>
+<view class='recommand-list-container'>
+	<view class='recommand-list' wx:for="{{recommand}}" wx:key="{{recommand}}">
+		<view>
+			<image src='{{item.url}}'
+			style='width:{{recommandImageWidth}}px;height:{{recommandImageHeight}}px'
+			bindload="countRecommand"
+			/>
+		</view>
+		<view>{{item.text}}</view>
+		<view class='price'>{{item.price}}</view>
+	</view>
+	<view class='clear'></view>
+</view>
